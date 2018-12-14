@@ -16,6 +16,8 @@ total_cpu_threads = multiprocessing.cpu_count()
 
 
 LICHEE_ZERO_BRMIN_ALPHA_DD_IMG_PATH = './lichee_zero-brmin_alpha.dd'
+LICHEE_ZERO_MINDX_ALPHA_DD_IMG_PATH = './lichee_zero-mindX_alpha.dd'
+
 LICHEE_ZERO_BRMIN_ALPHA_TAR_PATH = './brmin_dd.tar.bz2'
 
 def sleepAndWait(prompt,second_s):
@@ -48,3 +50,6 @@ def dd_image(sd_dev, img_path):
 
 def lichee_zero_brmin_alpha_dd(sd_dev):
     dd_image(sd_dev, LICHEE_ZERO_BRMIN_ALPHA_DD_IMG_PATH)
+
+def lichee_zero_mindx_alpha_dd(sd_dev):
+    dd_image(sd_dev, LICHEE_ZERO_MINDX_ALPHA_DD_IMG_PATH)
